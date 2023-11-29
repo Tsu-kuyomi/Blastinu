@@ -5,11 +5,18 @@ const createButton = document.getElementById("createButton");
 const refreshButton = document.getElementById("refreshButton");
 const img = document.getElementById("img");
 const mainD = document.getElementById("mainD");
+const wordCount = document.getElementById("wordCount");
 
 
 
 input.addEventListener("input", ()=> {
-    quote.innerHTML = input.value
+    quote.innerHTML = input.value;
+    wordCount.innerHTML = ("Word Count: " + input.value.length + "/" + "310.");
+    const currentText = input.value;
+
+        if (currentText.length > 310) {
+            input.value = currentText.substring(0, 310); // Trim the text to the specified length
+        }
 })
 
 function duplicate(){

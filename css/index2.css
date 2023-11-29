@@ -75,6 +75,12 @@ body{
     color: white;
  }
 
+ #wordCount{
+    font-family: poppins;
+    color: white;
+    font-size: 1rem;
+ }
+
  @media only screen and (max-width: 1000px) {
     .mainD{
         flex-direction: column;
