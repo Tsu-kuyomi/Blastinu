@@ -73,3 +73,13 @@ body{
     font-family: poppins;
  }
 
+ @media only screen and (max-width: 1000px) {
+    .mainD{
+        flex-direction: column;
+
+    }
+
+    .gButton{
+        margin-bottom: 20px;
+    }
+  }
