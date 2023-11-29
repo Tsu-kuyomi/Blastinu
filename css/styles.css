@@ -90,4 +90,8 @@ body{
     .gButton{
         margin-bottom: 20px;
     }
+
+    .img> img {
+        width: 480px;
+      }
   }
