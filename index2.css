@@ -68,9 +68,11 @@ body{
     text-align: right;
  }
 
- .footer > p{
+ .footer > a{
     padding-right: 20px;
     font-family: poppins;
+    text-decoration: none;
+    color: white;
  }
 
  @media only screen and (max-width: 1000px) {
