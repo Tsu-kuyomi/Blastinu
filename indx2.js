@@ -1,11 +1,10 @@
 const input = document.getElementById("mainInput");
 const quote = document.getElementById("quote");
-const increaseButton = document.getElementById("increaseButton");
-const reduceButton = document.getElementById("reduceButton");
-const ogHolder = document.getElementById("ogHolder");
 const downloadButton = document.getElementById("downloadButton");
 const createButton = document.getElementById("createButton");
 const refreshButton = document.getElementById("refreshButton");
+const img = document.getElementById("img");
+const mainD = document.getElementById("mainD");
 
 
 
@@ -14,11 +13,11 @@ input.addEventListener("input", ()=> {
 })
 
 function duplicate(){
-    html2canvas(document.getElementById("mainQuote")).then(canvas => {
+    html2canvas(img).then(canvas => {
   document.body.appendChild(canvas)
   canvas.id = "canvasele"; });
   const canvasElement = document.querySelector('canvas');
-  mainQuote.classList.add('hidden');
+  mainD.classList.add('hidden');
   createButton.classList.add('hidden');
   downloadButton.classList.remove('hidden');
   }
