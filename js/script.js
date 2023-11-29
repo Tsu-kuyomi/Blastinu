@@ -11,11 +11,11 @@ const wordCount = document.getElementById("wordCount");
 
 input.addEventListener("input", ()=> {
     quote.innerHTML = input.value;
-    wordCount.innerHTML = ("Word Count: " + input.value.length + "/" + "310.");
+    wordCount.innerHTML = ("Word Count: " + input.value.length + "/" + "330.");
     const currentText = input.value;
 
-        if (currentText.length > 310) {
-            input.value = currentText.substring(0, 310); // Trim the text to the specified length
+        if (currentText.length > 330) {
+            input.value = currentText.substring(0, 330); // Trim the text to the specified length
         }
 })
 
